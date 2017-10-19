@@ -1,0 +1,118 @@
+/* RESET  BROWSER CSS */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  p {margin: 0px;}
+
+ /* END RESET*/
+
+ /*font add*/
+@font-face {
+	font-family: "cicero";
+    src: url('fonts/cicero sans negrita.ttf');
+}
+
+
+ .flex-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.logotype {
+	color: #000000;
+	font-size: 1em;
+	font-family: 'cicero', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #606060;
+	font-size: 1em;
+	font-family: 'cicero', sans-serif;
+	margin-top: 20px; 
+}
+
+div h1 {
+	font-family: 'cicero', sans-serif;
+	color: #000000;
+}
+
+.maintext {
+    font-family: 'cicero', sans-serif;
+    font-size: 1em;
+    color: #606060;
+}
+
+.maintext p {
+	padding-left: 20px;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    line-height: 1.2em;
+}
+
+button {
+	font-family: 'cicero', sans-serif;
+	background-color: black;
+	color: #ffffff;
+	border-style: none;
+	font-size: 1em;
+	border-radius: 25px;
+	width: 100%;
+	padding: 15px 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*Desktop Optimization*/
+
+@media only screen and (min-width: 480px) {
+
+	.flex-container.top-nav{
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	a {padding: 0px 15px;}
+
+	.header {
+		display: inline;
+	}
+
+  	button {
+  		width: 100px;
+  		margin-left: 15px;
+  	}
+
+ 	.flex-container.body {
+ 		flex-direction: row;
+ 		justify-content: space-around;
+ 		align-items: flex-start;
+ 		margin-top: 50px;
+ 		margin-bottom: 50px;
+ 	}
+
+ 	.flex-container.maintext {
+ 		width: 50%;
+ 	}
+
+ 	div .scroll {
+ 		display: flex;
+ 		width: 100%;
+ 		align-items: center;
+ 	}
+}
+
+@media only screen and (max-width: 480px) {
+    .circles img {display: none;}
+}
+
