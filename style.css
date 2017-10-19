@@ -79,13 +79,16 @@ button {
 
 	.flex-container.top-nav{
 		flex-direction: row;
-		justify-content: flex-end;
 	}
 
 	a {padding: 0px 15px;}
 
 	.header {
-		display: inline;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 30px;
 	}
 
   	button {
@@ -95,24 +98,35 @@ button {
 
  	.flex-container.body {
  		flex-direction: row;
- 		justify-content: space-around;
+ 		justify-content: space-between;
  		align-items: flex-start;
  		margin-top: 50px;
  		margin-bottom: 50px;
+ 		padding: 0 30px;
  	}
 
  	.flex-container.maintext {
  		width: 50%;
  	}
 
- 	div .scroll {
+ 	.scroll {
  		display: flex;
- 		width: 100%;
- 		align-items: center;
+ 		justify-content: center;
+
  	}
 }
 
-@media only screen and (max-width: 480px) {
-    .circles img {display: none;}
+@media only screen and (max-width: 768px) {
+
+	.circles img {display: none;}
+
+	.flex-container.body {
+ 		flex-direction: row;
+ 		justify-content: center;
+ 	}
+
+ 	.flex-container.maintext {
+ 		width: 100%;
+ 	}
 }
 
